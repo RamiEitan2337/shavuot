@@ -1,10 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Happy Shavuot</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holiday Gift Baskets</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fffaf4;
+        }
+
+        header {
+            background: #8b1e2d;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .baskets {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .basket-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .basket-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .basket-content {
+            padding: 20px;
+        }
+
+        .basket-content h2 {
+            color: #8b1e2d;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .contact-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+            margin-bottom: 40px;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            color: #8b1e2d;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            background: #8b1e2d;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #6f1723;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #f3e6d8;
+        }
+
+        .whatsapp-link {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .whatsapp-link:hover {
+            background: #1ebe5d;
+        }
+
+        @media (max-width: 768px) {
+            .baskets {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-Enjoy the holiday!
+<header>
+    <h1>Holiday Gift Baskets</h1>
+    <p>
+        Celebrate the season with beautifully curated holiday gift baskets, perfect
+        for family, friends, clients, and coworkers.
+    </p>
+</header>
+
+<main>
+    <section class="intro">
+        <p>
+            Our holiday baskets are thoughtfully arranged with festive treats,
+            gourmet snacks, and seasonal favorites. Choose from our selection below
+            or contact us to customize a basket for your special occasion.
+        </p>
+    </section>
+
+    <section class="baskets">
+        <article class="basket-card">
+            <img src="https://via.placeholder.com/400x300?text=Classic+Holiday+Basket" alt="Classic Holiday Basket" />
+            <div class="basket-content">
+                <h2>Classic Holiday Basket</h2>
+                <p>
+                    A warm and festive basket filled with traditional holiday treats,
+                    chocolates, cookies, and seasonal snacks that everyone will enjoy.
+                </p>
+            </div>
+        </article>
+
+        <article class="basket-card">
+            <img src="https://via.placeholder.com/400x300?text=Gourmet+Gift+Basket" alt="Gourmet Gift Basket" />
+            <div class="basket-content">
+                <h2>Gourmet Gift Basket</h2>
+                <p>
+                    An elevated selection of premium crackers, cheeses, sweets, and
+                    specialty items, perfect for clients, hosts, or corporate gifting.
+                </p>
+            </div>
+        </article>
+
+        <article class="basket-card">
+            <img src="https://via.placeholder.com/400x300?text=Sweet+Treats+Basket" alt="Sweet Treats Basket" />
+            <div class="basket-content">
+                <h2>Sweet Treats Basket</h2>
+                <p>
+                    A delightful basket packed with candies, chocolates, baked goods,
+                    and festive sweets for anyone with a holiday sweet tooth.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+
+        <form action="#" method="post">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required />
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us what you’re looking for"></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Have a question or want to order directly?</p>
+    <a class="whatsapp-link" href="https://wa.me/1234567890" target="_blank">
+        Message us on WhatsApp
+    </a>
+</footer>
 </body>
 </html>
