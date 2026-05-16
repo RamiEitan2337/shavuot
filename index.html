@@ -76,7 +76,7 @@
             <a
                     id="venmoButton"
                     class="bottom-venmo-button"
-                    href="https://venmo.com/Yael-Ido?txn=pay&note=Shavuot%20Basket"
+                    href="https://venmo.com/u/Yael-Ido?txn=pay&note=Shavuot%20Basket"
                     target="_blank"
             >
                 Pay with Venmo
@@ -143,7 +143,7 @@
           <p>${basket.description}</p>
           <a
               class="venmo-icon-button"
-              href="https://venmo.com/${venmoUsername}?txn=pay&amount=${basket.amount}&note=${encodeURIComponent(basket.name)}"
+              href="https://venmo.com/u/${venmoUsername}?txn=pay&amount=${basket.amount}&note=${encodeURIComponent(basket.name)}"
               target="_blank"
               aria-label="Pay for ${basket.name} with Venmo"
               title="Pay with Venmo"> <img src="./images/venmo-icon.svg" alt="Venmo Icon" /> </a>
@@ -171,14 +171,14 @@
         });
 
         if (!selectedBasket) {
-            venmoButton.href = `https://venmo.com/${venmoUsername}?txn=pay&note=Holiday%20Gift%20Basket`;
+            venmoButton.href = `https://venmo.com/u/${venmoUsername}?txn=pay&note=Holiday%20Gift%20Basket`;
             venmoButton.textContent = "Pay with Venmo";
             return;
         }
 
         const note = encodeURIComponent(selectedBasket.name);
 
-        venmoButton.href = `https://venmo.com/${venmoUsername}?txn=pay&amount=${selectedBasket.amount}&note=${note}`;
+        venmoButton.href = `https://venmo.com/u/${venmoUsername}?txn=pay&amount=${selectedBasket.amount}&note=${note}`;
         venmoButton.textContent = `Pay $${selectedBasket.amount} with Venmo`;
     }
 
