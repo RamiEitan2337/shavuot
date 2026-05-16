@@ -5,171 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Holiday Gift Baskets</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fffaf4;
-        }
-
-        header {
-            background: #8b1e2d;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-
-        header p {
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-        }
-
-        main {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .intro {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 1.1rem;
-        }
-
-        .baskets {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            margin-bottom: 50px;
-        }
-
-        .basket-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-
-        .basket-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .basket-content {
-            padding: 20px;
-        }
-
-        .basket-content h2 {
-            color: #8b1e2d;
-            margin-bottom: 10px;
-            font-size: 1.3rem;
-        }
-
-        .contact-section {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
-            margin-bottom: 40px;
-        }
-
-        .contact-section h2 {
-            text-align: center;
-            color: #8b1e2d;
-            margin-bottom: 20px;
-        }
-
-        form {
-            display: grid;
-            gap: 15px;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 1rem;
-        }
-
-        textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        button {
-            background: #8b1e2d;
-            color: white;
-            border: none;
-            padding: 14px;
-            border-radius: 8px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #6f1723;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            background: #f3e6d8;
-        }
-
-        .whatsapp-link {
-            display: inline-block;
-            background: #25d366;
-            color: white;
-            text-decoration: none;
-            padding: 12px 22px;
-            border-radius: 30px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .delivery-note {
-            margin-top: 15px;
-            font-size: 0.95rem;
-            text-align: center;
-            font-weight: bold;
-            color: #8b1e2d;
-        }
-
-        .whatsapp-link:hover {
-            background: #1ebe5d;
-        }
-
-        @media (max-width: 768px) {
-            .baskets {
-                grid-template-columns: 1fr;
-            }
-
-            header h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -190,40 +26,14 @@
     </section>
 
     <p class="delivery-note">
-        We proudly deliver to NYC, Westchester County, Rockland County, and Bergen County.
+        משלוח עד הבית
+        <br>
+        NYC, Westchester County, Rockland County, and Bergen County.
     </p>
 
-    <section class="baskets">
-        <article class="basket-card">
-            <img src="./images/basic.png" alt="Classic Holiday Basket" />
-            <div class="basket-content">
-                <h2>שבועות Classic</h2>
-                <p>
-                    מארז חגיגי הכולל בקבוק יין לבן איכותי, שלוש גבינות, חמאת עשבי תבלין וריבה תוצרת בית. מתאים לפיקניק זוגי באווירת שבועות.89$
-                </p>
-            </div>
-        </article>
+    <section class="baskets" id="basketCards"></section>
 
-        <article class="basket-card">
-            <img src="./images/large.png" alt="Classic Holiday Basket" />
-            <div class="basket-content">
-                <h2>מארז הכרם</h2>
-                <p>
-                    מארז מפנק המכיל שני בקבוקי יין - אדום ולבן, ארבעה סוגי גבינות בוטיק, חמאת עשבי תבלין וריבה ביתית. מושלם לארוחת חג משפחתית.139$
-                </p>
-            </div>
-        </article>
 
-        <article class="basket-card">
-            <img src="./images/somm.png" alt="Classic Holiday Basket" />
-            <div class="basket-content">
-                <h2>Sommelier’s Edit</h2>
-                <p>
-                    טעימה מודרכת בקופסה- מארז אלגנטי הכולל בקבוק יין לבן, בקבוק יין אדום ובקבוק מתיישן, חמש גבינות המותאמות ליינות, חמאת עשבי תבלין וריבה ביתית.179$
-                </p>
-            </div>
-        </article>
-    </section>
 
     <section class="contact-section">
         <h2>להזמנות</h2>
@@ -249,8 +59,28 @@
                 <input type="text" id="address" name="address" placeholder="Your delivery address" />
             </div>
 
+            <div>
+                <label for="basket">Gift Basket</label>
+                <select id="basket" name="basket" required>
+                    <option value="">Select a basket</option>
+                </select>
+            </div>
+
             <button type="submit">Send Message</button>
         </form>
+
+        <div class="form-venmo">
+            <p>Prefer to pay directly?</p>
+            <a
+                    id="venmoButton"
+                    class="bottom-venmo-button"
+                    href="https://venmo.com/Yael-Ido?txn=pay&note=Shavuot%20Basket"
+                    target="_blank"
+            >
+                Pay with Venmo
+            </a>
+        </div>
+
     </section>
 </main>
 
@@ -259,5 +89,101 @@
         שלחו לנו הודעה בוואטסאפ
     </a>
 </footer>
+
+<script>
+    const venmoUsername = "Yael-Ido";
+
+    const baskets = [
+        {
+            id: "classic-holiday-basket",
+            name: "קלאסיק שבועות (Classic Shavuot)",
+            amount: 89,
+            image: "./images/basic.png",
+            alt: "Classic Shavuot",
+            description:"המארז כולל בקבוק יין לבן צונן, שלוש גבינות בוטיק משובחות, חמאת עשבי תיבול ביתית וריבת בצל עשירה.\n" +
+                "                    המארז המושלם לארוחת חג אינטימית, פיקניק אביבי או כמתנה חגיגית למארחים, עם שילוב מדויק של יין מרענן וגבינות שנבחרו בקפידה."
+        },
+        {
+            id: "gourmet-gift-basket",
+            name: "מארז הכרם (The Vineyard Basket)",
+            amount: 139,
+            image: "./images/large.png",
+            alt: "The Vineyard Basket",
+            description:"\n" +
+                "                    המארז כולל בקבוק יין לבן מרענן, בקבוק יין אדום עמוק, ארבע גבינות בוטיק משובחות, חמאת עשבי תיבול ביתית וריבת בצל עשירה.\n" +
+                "                    נהנים מכל העולמות עם חגיגה של טעמים המשלבת בין יין לבן קליל לאדום עשיר, לצד מבחר גבינות משלימות שירימו את שולחן החג שלכם."
+        },
+        {
+            id: "sweet-treats-basket",
+            name: "Sweet Treats Basket",
+            amount: 179,
+            image: "./images/somm.png",
+            alt: "Sommelier’s Edit",
+            description:
+                "המארז כולל בקבוק יין לבן, בקבוק יין אדום, בקבוק יין אדום מתיישן ויוקרתי, חמש גבינות בוטיק משובחות, חמאת עשבי תיבול ביתית וריבת בצל עשירה.\n" +
+                "                    חוויית שבועות אולטימטיבית לחובבי יין וגורמה אמיתיים במארז עשיר ומרשים במיוחד, המרכז את חומרי הגלם האיכותיים ביותר לאירוח בלתי נשכח."
+        }
+    ];
+
+    const basketCards = document.getElementById("basketCards");
+    const basketSelect = document.getElementById("basket");
+    const venmoButton = document.getElementById("venmoButton");
+
+    function createBasketCards() {
+        baskets.forEach(function (basket) {
+            const article = document.createElement("article");
+            article.className = "basket-card";
+
+            article.innerHTML = `
+        <img src="${basket.image}" alt="${basket.alt}" />
+        <div class="basket-content">
+          <h2>${basket.name} (${basket.amount})</h2>
+          <p>${basket.description}</p>
+          <a
+              class="venmo-icon-button"
+              href="https://venmo.com/${venmoUsername}?txn=pay&amount=${basket.amount}&note=${encodeURIComponent(basket.name)}"
+              target="_blank"
+              aria-label="Pay for ${basket.name} with Venmo"
+              title="Pay with Venmo"> <img src="./images/venmo-icon.svg" alt="Venmo Icon" /> </a>
+        </div>
+      `;
+
+            basketCards.appendChild(article);
+        });
+    }
+
+    function populateBasketDropdown() {
+        baskets.forEach(function (basket) {
+            const option = document.createElement("option");
+            option.value = basket.id;
+            option.textContent = `${basket.name} - $${basket.amount}`;
+            basketSelect.appendChild(option);
+        });
+    }
+
+    function updateVenmoButton() {
+        const selectedBasketId = basketSelect.value;
+
+        const selectedBasket = baskets.find(function (basket) {
+            return basket.id === selectedBasketId;
+        });
+
+        if (!selectedBasket) {
+            venmoButton.href = `https://venmo.com/${venmoUsername}?txn=pay&note=Holiday%20Gift%20Basket`;
+            venmoButton.textContent = "Pay with Venmo";
+            return;
+        }
+
+        const note = encodeURIComponent(selectedBasket.name);
+
+        venmoButton.href = `https://venmo.com/${venmoUsername}?txn=pay&amount=${selectedBasket.amount}&note=${note}`;
+        venmoButton.textContent = `Pay $${selectedBasket.amount} with Venmo`;
+    }
+
+    createBasketCards();
+    populateBasketDropdown();
+    basketSelect.addEventListener("change", updateVenmoButton);
+</script>
+
 </body>
 </html>
