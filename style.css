@@ -194,6 +194,25 @@ select {
     background: #6fc5f7;
 }
 
+.language-toggle {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.92);
+    color: #8b1e2d;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.language-toggle:hover {
+    background: white;
+}
+
 @media (max-width: 768px) {
     .baskets {
         grid-template-columns: 1fr;

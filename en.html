@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>מארזים חגיגיים לשבועות</title>
+    <title>Holiday Gift Baskets</title>
 
     <meta
             name="description"
-            content="מארזי יין וגבינות בוטיק יוקרתיים במשלוח עד הבית."
+            content="Luxury boutique wine and cheese gift baskets delivered to your door."
     />
 
     <!-- Open Graph / WhatsApp preview -->
     <meta property="og:title" content="Holiday Gift Baskets" />
     <meta
             property="og:description"
-            content="מארזי יין וגבינות בוטיק יוקרתיים במשלוח עד הבית."
+            content="Luxury boutique wine and cheese gift baskets delivered to your door."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ramieitan2337.github.io/shavuot/" />
-    <meta property="og:site_name" content="מארזי יין לשבועות" />
+    <meta property="og:site_name" content="Wine Baskets for Shavuot" />
     <meta property="og:image" content="https://ramieitan2337.github.io/shavuot/images/preview.jpg" />
     <meta property="og:image:alt" content="Holiday gift basket preview" />
 
@@ -26,55 +26,55 @@
 </head>
 
 <body>
-<a class="language-toggle" href="en.html">English</a>
+<a class="language-toggle" href="index.html">עברית</a>
 <header>
-    <h1>להרגיש שבועות בישראל – גם בניו יורק וניו ג’רזי</h1>
+    <h1>Feel Shavuot in Israel — Even in New York and New Jersey</h1>
     <p>
-        מארזי יין וגבינות בוטיק יוקרתיים במשלוח עד הבית. כל מה ששולחן החג שלכם צריך, במרחק קליק אחד.
+        Luxury boutique wine and cheese gift baskets delivered to your door. Everything your holiday table needs, one click away.
     </p>
 </header>
 
 <main>
     <section class="intro">
         <p>
-            סלי החג שלנו מסודרים בקפידה עם פינוקים חגיגיים, חטיפי גורמה ומוצרים עונתיים אהובים. בחרו מהמבחר שלנו למטה או צרו איתנו קשר כדי להתאים סל במיוחד לאירוע המיוחד שלכם.
+            Our holiday baskets are thoughtfully arranged with festive treats,
+            gourmet snacks, and seasonal favorites. Choose from our selection below
+            or contact us to customize a basket for your special occasion.
         </p>
     </section>
 
     <p class="delivery-note">
-        משלוח עד הבית
+        Delivery to your door
         <br>
         NYC, Westchester County, Rockland County, and Bergen County.
     </p>
 
     <section class="baskets" id="basketCards"></section>
 
-
-
     <section class="contact-section">
-        <h2>להזמנות</h2>
+        <h2>For Orders</h2>
 
         <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="6dd8930f-5927-4fa5-ac35-23f0f7e613a0" />
 
             <input type="hidden" name="subject" value="Shavuot basket order" />
             <div>
-                <label for="name">שם</label>
+                <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name" required />
             </div>
 
             <div>
-                <label for="email">אי מייל</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Your email" required />
             </div>
 
             <div>
-                <label for="phone">מספר טלפון</label>
+                <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
             </div>
 
             <div>
-                <label for="address">כתובת למשלוח</label>
+                <label for="address">Delivery Address</label>
                 <input type="text" id="address" name="address" placeholder="Your delivery address" />
             </div>
 
@@ -104,7 +104,7 @@
 
 <footer>
     <a class="whatsapp-link" href="https://wa.me/16466418040?text=Hi%2C%20I%20am%20interested%20in%20ordering%20a%20holiday%20gift%20basket." target="_blank">
-        שלחו לנו הודעה בוואטסאפ
+        Send us a message on WhatsApp
     </a>
 </footer>
 
@@ -114,22 +114,22 @@
     const baskets = [
         {
             id: "classic",
-            name: "קלאסיק שבועות (Classic Shavuot)",
+            name: "Classic Shavuot",
             amount: 89,
             image: "./images/basic.png",
             alt: "Classic Shavuot",
-            description:"המארז כולל בקבוק יין לבן צונן, שלוש גבינות בוטיק משובחות, חמאת עשבי תיבול ביתית וריבת בצל עשירה.\n" +
-                "                    המארז המושלם לארוחת חג אינטימית, פיקניק אביבי או כמתנה חגיגית למארחים, עם שילוב מדויק של יין מרענן וגבינות שנבחרו בקפידה."
+            description:"The basket includes a chilled bottle of white wine, three fine boutique cheeses, homemade herb butter, and rich onion jam.\n" +
+                "                    The perfect basket for an intimate holiday meal, a spring picnic, or a festive host gift, with a precise pairing of refreshing wine and carefully selected cheeses."
         },
         {
             id: "vinyard",
-            name: "מארז הכרם (The Vineyard Basket)",
+            name: "The Vineyard Basket",
             amount: 139,
             image: "./images/large.png",
             alt: "The Vineyard Basket",
             description:"\n" +
-                "                    המארז כולל בקבוק יין לבן מרענן, בקבוק יין אדום עמוק, ארבע גבינות בוטיק משובחות, חמאת עשבי תיבול ביתית וריבת בצל עשירה.\n" +
-                "                    נהנים מכל העולמות עם חגיגה של טעמים המשלבת בין יין לבן קליל לאדום עשיר, לצד מבחר גבינות משלימות שירימו את שולחן החג שלכם."
+                "                    The basket includes a refreshing bottle of white wine, a deep red wine, four fine boutique cheeses, homemade herb butter, and rich onion jam.\n" +
+                "                    Enjoy the best of all worlds with a celebration of flavors combining light white wine and rich red wine, alongside a selection of complementary cheeses that will elevate your holiday table."
         },
         {
             id: "somm",
@@ -138,8 +138,8 @@
             image: "./images/somm.png",
             alt: "Sommelier’s Edit",
             description:
-                "המארז כולל בקבוק יין לבן, בקבוק יין אדום, בקבוק יין אדום מתיישן ויוקרתי, חמש גבינות בוטיק משובחות, חמאת עשבי תיבול ביתית וריבת בצל עשירה.\n" +
-                "                    חוויית שבועות אולטימטיבית לחובבי יין וגורמה אמיתיים במארז עשיר ומרשים במיוחד, המרכז את חומרי הגלם האיכותיים ביותר לאירוח בלתי נשכח."
+                "The basket includes a bottle of white wine, a bottle of red wine, a premium aged red wine, five fine boutique cheeses, homemade herb butter, and rich onion jam.\n" +
+                "                    The ultimate Shavuot experience for true wine and gourmet lovers, in an especially rich and impressive basket that brings together the highest-quality ingredients for unforgettable hosting."
         }
     ];
 
@@ -188,7 +188,7 @@
 
         if (!selectedBasket) {
             venmoButton.href = `https://venmo.com/u/${venmoUsername}?txn=pay&note=Holiday%20Gift%20Basket`;
-            venmoButton.textContent = "לתשלום בוונמו";
+            venmoButton.textContent = "Pay with Venmo";
             return;
         }
 
@@ -196,7 +196,6 @@
 
         venmoButton.href = `https://venmo.com/u/${venmoUsername}?txn=pay&amount=${selectedBasket.amount}&note=${note}`;
         venmoButton.textContent = `Pay $${selectedBasket.amount} with Venmo`;
-        venmoButton.textContent = `לתשלום $${selectedBasket.amount} בונמו `;
     }
 
     createBasketCards();
@@ -206,3 +205,4 @@
 
 </body>
 </html>
+```
